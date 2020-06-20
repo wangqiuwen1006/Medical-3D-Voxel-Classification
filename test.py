@@ -2,7 +2,7 @@
 """
 Created on Wed Jun 17 19:59:05 2020
 
-@author: Apple
+@author: Qiuwen Wang
 """
 
 import numpy as np
@@ -17,13 +17,10 @@ from tqdm import tqdm
 from torch.autograd import Variable
 import time
 import pandas as pd
-from Dense3D import Dense3D
 from resnet3d import resnet26,resnet50,resnet101,resnet152
 from densenet import densenet121,densenet169,densenet201
 from vgg import vgg11_bn,vgg13_bn,vgg16_bn,vgg19_bn
 from acsconv.converters.acsconv_converter import ACSConverter
-from senet import seresnet50
-from googlenet import googlenet
 from shake_shake import shake_resnet26_2x32d
 import csv
 
