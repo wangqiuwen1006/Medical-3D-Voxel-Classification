@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Jun 17 19:59:05 2020
 
-@author: Qiuwen Wang
-"""
 
 import numpy as np
 #import cv2
@@ -54,8 +50,7 @@ model=model.cuda()
 with torch.no_grad():
     for i in range(test_num):
         for step, test_x in enumerate(test_loader):
-        # TODO:forward + backward + optimize
-        #test_x = torch.tensor(test_x, dtype=torch.float32)
+       
             test_x = test_x.float()
             test_x = test_x.cuda()
             prediction1 = model(test_x)
@@ -68,8 +63,7 @@ model=model.cuda()
 with torch.no_grad():
     for i in range(test_num):
         for step, test_x in enumerate(test_loader):
-        # TODO:forward + backward + optimize
-        #test_x = torch.tensor(test_x, dtype=torch.float32)
+
             test_x = test_x.float()
             test_x = test_x.cuda()
             prediction2 = model(test_x)
@@ -83,8 +77,7 @@ model=model.cuda()
 with torch.no_grad():
     for i in range(test_num):
         for step, test_x in enumerate(test_loader):
-        # TODO:forward + backward + optimize
-        #test_x = torch.tensor(test_x, dtype=torch.float32)
+
             test_x = test_x.float()
             test_x = test_x.cuda()
             prediction3 = model(test_x)
@@ -98,8 +91,7 @@ model=model.cuda()
 with torch.no_grad():
     for i in range(test_num):
         for step, test_x in enumerate(test_loader):
-        # TODO:forward + backward + optimize
-        #test_x = torch.tensor(test_x, dtype=torch.float32)
+
             test_x = test_x.float()
             test_x = test_x.cuda()
             prediction4 = model(test_x)
@@ -114,8 +106,7 @@ model=model.cuda()
 with torch.no_grad():
     for i in range(test_num):
         for step, test_x in enumerate(test_loader):
-        # TODO:forward + backward + optimize
-        #test_x = torch.tensor(test_x, dtype=torch.float32)
+
             test_x = test_x.float()
             test_x = test_x.cuda()
             prediction5 = model(test_x)
